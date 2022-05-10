@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPLEXE RIGO CONTROLE QUALITE</title>
+    <link rel="stylesheet" href="assets/css/CSS1.css">
+</head>
+
+<body background="im2.jpg">
+    <marquee behavior="" status="">
+        <h1>AVEC RIGO, LA QUALITE EST ASSUREE</h1>
+    </marquee>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit()">
+
+                    <div>
+                        <label for="productcode">Product Code* <label class="validation-error hide"  id="productCodeValidationError" >This Field is required</label> </label>
+                        <input type="text" name="productcode" id="productcode">
+                    </div>
+                    <div>
+                        <label for="productname">product Name* <label   >ce champ est obligatoire</label> </label>
+                        <input type="text" name="productname" id="productname">
+                    </div>
+                    <div>
+                        <label for="etat">etat product</label>
+                        <input type="text" name="etat" id="etat">
+                    </div>
+                    <div>
+                        <label for="peremtionday">peremtion day</label>
+                        <input type="text" name="peremtionday" id="peremtionday">
+                    </div>
+                    <div>
+                        <label for="producttype">product type</label>
+                        <input type="text" name="producttype" id="producttype">
+                    </div>
+                    <div>
+                        <input class="form-action-buttons submit" type="submit" value="Submit">
+                    </div>
+
+                </form>
+            </td>
+            <td>
+                <table class="list" id="emplist">
+                    <thead>
+                        <tr>
+                            <td class="thead">product Code</td>
+                            <td class="thead">product Name</td>
+                            <td class="thead">etat product</td>
+                            <td class="thead">peremtion day</td>
+                            <td class="thead">product type</td>
+                            <td class="thead">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

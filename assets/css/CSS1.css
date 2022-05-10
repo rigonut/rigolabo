@@ -1,0 +1,80 @@
+body {
+    background-size: 50em;
+    text-align: center;
+    color: #4709f3;
+}
+
+body>table {
+    width: 80%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table.list {
+    width: 100%;
+}
+
+.thead {
+    color: rgba(11, 14, 168, 0.89);
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td,
+th {
+    border: 2px solid #d8d3d3;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even),
+table.list thead>tr {
+    background-color: #6adb5b;
+}
+
+input[type=text],
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(8, 12, 236);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 100%;
+    background-color: rgb(24, 104, 202);
+    color: rgb(17, 182, 211);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: larger;
+    float: right;
+}
+
+form.form-action-buttons {
+    text-align: right;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    margin-right: 4px;
+    color: #03080a;
+    text-overflow: ellipsis;
+}
+
+label.validation-error {
+    color: rgb(59, 9, 238);
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}
