@@ -5,68 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPLEXE RIGO CONTROLE QUALITE</title>
-    <link rel="stylesheet" href="assets/css/CSS1.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/records.css">
+    <link rel="stylesheet" href="assets/css/model.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>SMS CRUD</title>
 </head>
 
-<body background="im2.jpg">
-    <marquee behavior="" status="">
-        <h1>AVEC RIGO, LA QUALITE EST ASSUREE</h1>
-    </marquee>
-    <table>
-        <tr>
-            <td>
-                <form onsubmit="event.preventDefault(); onFormSubmit()">
+<body>
+    <header>
+        <h1 class="header-title">le labo RIGOBIOSUR</h1>
 
-                    <div>
-                        <label for="productcode">Product Code* <label class="validation-error hide"  id="productCodeValidationError" >This Field is required</label> </label>
-                        <input type="text" name="productcode" id="productcode">
-                    </div>
-                    <div>
-                        <label for="productname">product Name* <label   >ce champ est obligatoire</label> </label>
-                        <input type="text" name="productname" id="productname">
-                    </div>
-                    <div>
-                        <label for="etat">etat product</label>
-                        <input type="text" name="etat" id="etat">
-                    </div>
-                    <div>
-                        <label for="peremtionday">peremtion day</label>
-                        <input type="text" name="peremtionday" id="peremtionday">
-                    </div>
-                    <div>
-                        <label for="producttype">product type</label>
-                        <input type="text" name="producttype" id="producttype">
-                    </div>
-                    <div>
-                        <input class="form-action-buttons submit" type="submit" value="Submit">
-                    </div>
+    </header>
+    <main>
+        <button class="button blue mobile" id="idproduct">New product</button>
+        <table id="tblproduct" class="records">
+            <thead>
+                <tr>
+                    <td>name</td>
+                    <td>id</td>
+                    <td>état</td>
+                    <td>prix</td>
+                    <td>peremtion</td>
+                    <td>type</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody>
 
+            </tbody>
+        </table>
+        <!-- <div class="model active" id="model"> -->
+        <div class="model" id="model">
+            <div class="model-content">
+                <header class="model-header">
+                    <h2>Create New product</h2>
+                    <span class="model-close" id="modelClose">&#10006;</span>
+                </header>
+                <form id="form" class="model-form">
+                    <input type="text" class="model-field" id="name" data-index="new" placeholder="product Name" required>
+                    <input type="text" class="model-field" id="id" placeholder="product id" required>
+                    <input type="text" class="model-field" id="etat" placeholder="product etat" required>
+                    <input type="text" class="model-field" id="prix" placeholder="product prix" required>
+                    <input type="date" class="model-field" id="peremtion" placeholder="peremtion day" required>
+                    <input type="text" class="model-field" id="type" placeholder="product type" required>
                 </form>
-            </td>
-            <td>
-                <table class="list" id="emplist">
-                    <thead>
-                        <tr>
-                            <td class="thead">product Code</td>
-                            <td class="thead">product Name</td>
-                            <td class="thead">etat product</td>
-                            <td class="thead">peremtion day</td>
-                            <td class="thead">product type</td>
-                            <td class="thead">Actions</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
-    </div>
-
-
-    <script src="assets/js/script.js"></script>
+                <footer class="model-footer">
+                    <button class="button green" id="save">Save</button>
+                    <button class="button blue" id="cancel">Cancel</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Hltic Corp 2022 <br> Rigobert Louakalba<br> Full Stack junio Developer<br> Phone: +23566XXXXXX<br> louaba@gmail.com
+        <br>
+    </footer>
 </body>
 
 </html>
